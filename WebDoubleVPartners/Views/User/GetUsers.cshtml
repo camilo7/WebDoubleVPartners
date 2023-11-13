@@ -1,0 +1,23 @@
+﻿@model List<User>
+
+<h2>User List</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>UserName</th>
+            <th>CreationDate</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.id</td>
+                <td>@user.userName</td>
+                <td>@user.creationDate</td>
+            </tr>
+        }
+    </tbody>
+</table>
